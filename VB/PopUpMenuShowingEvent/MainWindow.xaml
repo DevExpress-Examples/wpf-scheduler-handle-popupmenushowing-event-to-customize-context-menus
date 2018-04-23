@@ -1,0 +1,22 @@
+﻿<Window x:Class="PopUpMenuShowingEvent.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:dxsch="http://schemas.devexpress.com/winfx/2008/xaml/scheduling"
+        mc:Ignorable="d"
+        Title="DXScheduler" Height="350" Width="525">
+        <Grid>
+            <dxsch:SchedulerControl x:Name="scheduler"
+                                    ActiveViewIndex="0"
+                                    ShowBorder="true"                                     
+                                    GroupType="Date" 
+                                    WorkDays="WorkDays,Saturday" 
+                                    WorkTime="06:00:00-23:00:00" PopupMenuShowing="scheduler_PopupMenuShowing">
+                <dxsch:DayView x:Name="dayView1" 
+                               ShowTimeIndicatorOverAppointment="True"
+                               ResourcesPerPage="2" 
+                               DayCount="2"/>
+            </dxsch:SchedulerControl>
+        </Grid>
+</Window>
