@@ -18,7 +18,7 @@ namespace PopUpMenuShowingEvent {
                 for (int i = 0; i < menu.Items.Count; i++) {
                     BarItem menuItem = menu.Items[i] as BarItem;
                     if (menuItem != null) {
-                        if (menuItem != null && menuItem.Content.ToString() == "New All Day Event") {
+                        if (menuItem != null && menuItem.Name == DefaultBarItemNames.ContextMenu_Items_Cell_Actions_NewAllDayEvent) {
                             menuItem.Content = "Create All-Day Appointment";
                             break;
                         }
