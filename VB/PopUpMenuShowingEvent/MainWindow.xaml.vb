@@ -1,12 +1,9 @@
 Imports DevExpress.Xpf.Bars
-Imports System.Windows
 Imports DevExpress.Xpf.Scheduling
+Imports System.Windows
 
 Namespace PopUpMenuShowingEvent
 
-    ''' <summary>
-    ''' Interaction logic for MainWindow.xaml
-    ''' </summary>
     Public Partial Class MainWindow
         Inherits Window
 
@@ -16,7 +13,6 @@ Namespace PopUpMenuShowingEvent
             Me.InitializeComponent()
         End Sub
 
-#Region "#PopUpMenuShowing"
         Private Sub scheduler_PopupMenuShowing(ByVal sender As Object, ByVal e As PopupMenuShowingEventArgs)
             'Customize the cell context menu:
             If e.MenuType = ContextMenuType.CellContextMenu Then
@@ -40,8 +36,6 @@ Namespace PopUpMenuShowingEvent
             End If
         End Sub
 
-#End Region  ' #PopUpMenuShowing
-#Region "#NewMenuItem"
         Private Sub CreateNewItem()
             'Create a new menu item: 
             myMenuItem = New BarButtonItem()
@@ -54,6 +48,5 @@ Namespace PopUpMenuShowingEvent
             ' Implement a custom action. 
             MessageBox.Show(String.Format("{0} is clicked", e.Item.Name))
         End Sub
-#End Region  ' #NewMenuItem
     End Class
 End Namespace
