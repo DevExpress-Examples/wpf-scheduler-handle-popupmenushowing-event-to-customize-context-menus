@@ -3,17 +3,24 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T575003)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
 
-* [MainWindow.xaml](./CS/PopUpMenuShowingEvent/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/PopUpMenuShowingEvent/MainWindow.xaml))
+# WPF Scheduler - Handle the PopupMenuShowing Event to Customize Context Menus
+
+This example uses the [SchedulerControl.PopupMenuShowing](https://docs.devexpress.com/WPF/DevExpress.Xpf.Scheduling.SchedulerControl.PopupMenuShowing) event to customize the Scheduler cell context menu at runtime.
+
+![image](https://github.com/DevExpress-Examples/how-to-handle-the-popupmenushowing-event-to-customize-the-scheduler-context-menu-t575003/assets/65009440/2eff7e02-3eb9-41bc-b7a7-852b5adae3d3)
+
+## Files to Review
+
+* [MainWindow.xaml](./CS/PopUpMenuShowingEvent/MainWindow.xaml)
 * [MainWindow.xaml.cs](./CS/PopUpMenuShowingEvent/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/PopUpMenuShowingEvent/MainWindow.xaml.vb))
-<!-- default file list end -->
-# How to handle the PopupMenuShowing event to customize the Scheduler context menu
 
+## Documentation
 
-The following code example shows how to customize the Scheduler cell context menu using the PopupMenuShowing event.
+* [Pop-Up Menus](https://docs.devexpress.com/WPF/119618/controls-and-libraries/scheduler/visual-elements/pop-up-menus)
+* [Create Context Menu](https://docs.devexpress.com/WPF/119615/controls-and-libraries/scheduler/design-time-features/smart-tag/create-context-menu)
+* [SchedulerControl.PopupMenuShowing](https://docs.devexpress.com/WPF/DevExpress.Xpf.Scheduling.SchedulerControl.PopupMenuShowing)
 
-<br/>
+## More Examples
 
-
+* [WPF Scheduler - Customize Context Menus](https://github.com/DevExpress-Examples/wpf-scheduler-customize-context-menus)
