@@ -12,7 +12,8 @@
                                     ShowBorder="true"                                     
                                     GroupType="Date" 
                                     WorkDays="WorkDays,Saturday" 
-                                    WorkTime="06:00:00-23:00:00" PopupMenuShowing="scheduler_PopupMenuShowing">
+                                    WorkTime="06:00:00-23:00:00" 
+                                    PopupMenuShowing="scheduler_PopupMenuShowing">
                 <dxsch:DayView x:Name="dayView1" 
                                ShowTimeIndicatorOverAppointment="True"
                                ResourcesPerPage="2" 

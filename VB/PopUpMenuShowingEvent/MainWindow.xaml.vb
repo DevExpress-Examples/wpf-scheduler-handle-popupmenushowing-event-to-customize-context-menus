@@ -21,7 +21,7 @@ Namespace PopUpMenuShowingEvent
                 For i As Integer = 0 To menu.Items.Count - 1
                     Dim menuItem As BarItem = TryCast(menu.Items(i), BarItem)
                     If menuItem IsNot Nothing Then
-                        If menuItem IsNot Nothing AndAlso Equals(menuItem.Content.ToString(), "New All Day Event") Then
+                        If menuItem IsNot Nothing AndAlso Equals(menuItem.Name, DefaultBarItemNames.ContextMenu_Items_Cell_Actions_NewAllDayEvent) Then
                             menuItem.Content = "Create All-Day Appointment"
                             Exit For
                         End If
